@@ -29,20 +29,17 @@ model domain extent -10 10
 ; types but ball-ball contacts, to which we assign the linearpbond model.
 
 ; Note that only the linear part of the linearpbond model is activated, 
-
 ; therefore the model will exactly behave as the linear model.
-
 ; excerpt-xwsu-start
 
 contact cmat default model linear property kn 5e6
 
 contact cmat default type ball-ball model linearpbond ...
-
-                                          property kn 5e6 proximity 0.1
+property kn 5e6 proximity 0.1
 
 ; excerpt-xwsu-end
 
-​
+
 
 ; Generate a box 
 
